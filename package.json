@@ -1,5 +1,5 @@
 {
-  "name": "typescript-di",
+  "name": "@bviale/typescript-di",
   "version": "1.0.0",
   "description": "A very light library to handle dependency injection with Typescript decorators",
   "main": "./dist/main.js",

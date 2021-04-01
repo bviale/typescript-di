@@ -5,6 +5,21 @@ Resolves the dependencies between services and allow the decorated services to b
 
 Can be used in all kinds of Typescript projects such as React.
 
+## Install
+
+`npm i --save @bviale/typescript-di`
+
+## Configuration
+Enable `experimentalDecorators` and `emitDecoratorMetadata` in your `tsconfig.json` :
+```
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    }
+}
+```
+
 ## Usage
 
 ```typescript
