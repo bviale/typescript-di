@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "lib": [
+            "esnext"
+        ],
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "sourceMap": true,
+        "target": "es6",
+        "outDir": "./dist"
+    },
+    "include": [
+        "src/main.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
