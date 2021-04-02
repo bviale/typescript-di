@@ -1,4 +1,8 @@
+# Deprecated
+Use [microsoft/tsyringe](https://github.com/microsoft/tsyringe) instead.
+
 # Dependency Injection decorators for Typescript
+
 A very light library to handle dependency injection with Typescript decorators using the Angular `@Service` way.
 
 Resolves the dependencies between services and allow the decorated services to be retrieved using the `ServiceLocator` singleton.
