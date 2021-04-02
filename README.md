@@ -34,5 +34,9 @@ class AuthenticationService {
     constructor (private loginService: LoginService) { }
 }
 
+// Retrieve a specific service instance
 const instance = ServiceLocator.instance.getService(AuthenticationService) as AuthenticationService;
+
+// Retrieve several services at once
+const [loginService, authenticationService] = ServiceLocator.instance.getServices(LoginService, AuthenticationService);
 ```

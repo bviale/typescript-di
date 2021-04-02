@@ -20,8 +20,7 @@ describe('Test #3', () => {
             constructor(public cservice: CService, public bservice: BService) { }
         }
 
-        const dinstance = ServiceLocator.instance.getService(DService) as DService;
-        const cinstance = ServiceLocator.instance.getService(CService) as CService;
+        const [dinstance, cinstance] = ServiceLocator.instance.getServices(DService, CService);
 
         expect(dinstance).toBeDefined();
         expect(dinstance).toBeInstanceOf(DService);

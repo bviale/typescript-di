@@ -46,14 +46,14 @@ export class ServiceLocator {
     private _services: ServiceModel[];
 
     private constructor() {
-        this._services = this.getServices();
+        this._services = this.loadServices();
     }
 
     public static get instance() {
         return this._instance || (this._instance = new this());
     }
 
-    private getServices(): ServiceModel[] {
+    private loadServices(): ServiceModel[] {
         const services: ServiceModel[] = [];
 
         const fillServices = () => {
@@ -112,5 +112,9 @@ export class ServiceLocator {
                 return service.instance;
             }
         }
+    }
+
+    public getServices(...identifiers: any[]) {
+        return identifiers.map(i => this._services.find(s => s.identifier === i)?.instance);
     }
 }
